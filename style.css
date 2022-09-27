@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-image: url(./img/13752104-728xauto.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 500px;
+    margin: auto;
+    padding: 15px;
+
+}
+
+.baslik {
+    /* box-shadow: 10px 10px 10px white; */
+    text-shadow: 10px 10px 10px wheat;
+}
+
+.container {
+    text-align: center;
+}
+
+.input-group {
+    min-width: 350px;
+    max-width: 550px;
+}
+
+.form-control {
+    line-height: 2.5rem;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.btn {
+    line-height: 2.5rem;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.row {
+    gap: 15px;
+    padding: 15px;
+}
+
+.card {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 10px 10px 10px grey;
+    padding: 3px;
+    background-image: url(./img/13752104-728xauto.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 440px;
+    width: 200px;
+}
+
+.card:hover {
+    height: 410px;
+    width: 210px; 
+}
+
+.list-group {
+    gap: 5px;
+    
+}
+
+
+
+.list-group-item {
+    font-size: 1.5rem;
+    background: none;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 900;
+    border-radius: 10px;
+    border: none;
+    width: 180px;
+}
+
+.btnRemove {
+    width: 180px;
+    margin: auto;
+
+}
+
+.remove {
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;   
+    color: black; 
+    width: 180px;
+
+}
+
+.remove:hover {
+    color:white;
+    /* background-color:red; */
+}
+
+.img{
+    background-color: rgba(255, 222, 173, 0.142);
+    /* background-color: honeydew; */
+    box-shadow: 5px 5px 5px grey;
+    height: 100px;
+    width: 100%;
+    justify-items: center;
+    border-radius: 10px;
+
+
+    
+}
+
+.item1 {
+    /* margin-bottom: 3px; */
+    /* background-color: coral; */
+    box-shadow: 1px 1px 1px grey;
+    font-weight: bolder;
+    
+}
+
+.item2 {
+    /* background-color:darkgreen; */
+    box-shadow: 1px 1px 1px grey;
+}
+
+
+.item3 {
+    font-size: 1rem !important      ;
+    box-shadow: 1px 1px 1px grey;
+    color: black;
+    font-weight: bolder;
+}
+
+
+.item4 {
+    font-size: 1rem !important      ;
+    box-shadow: 1px 1px 1px grey;
+}
+
+
+.Clouds {
+    background-image: url(https://cdn.pixabay.com/photo/2019/03/07/13/00/clouds-4040132_960_720.jpg);
+  }
+
+.Clear {
+    background-image: url(https://www.slobodenpecat.mk/wp-content/uploads/2020/07/sonchevo.jpg);
+  }
+
+
+.Rain {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNzCXXWOA3CSJIKUR9DGSjrC6PgxoL7FReXztNM8RQ_CUFJxHS5Q093yABSzXjCufZrsc&usqp=CAU);
+  }
