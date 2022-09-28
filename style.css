@@ -6,6 +6,7 @@
 
 body {
     width: 100%;
+    min-height: 100vh;
     background-image: url(./img/13752104-728xauto.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -40,8 +41,22 @@ body {
     box-shadow: 5px 5px 5px grey;
 }
 
+.screen {
+    height: 50px;
+}
+
+.screen h2 {
+    text-shadow: 5px 5px 5px lightblue;
+}
+
+.danger {
+    color: red;
+    text-shadow: 5px 5px 5px white !important;
+}
+
 .row {
-    gap: 15px;
+    height: 500px;
+    gap: 10px;
     padding: 15px;
 }
 
@@ -61,12 +76,13 @@ body {
 }
 
 .card:hover {
-    height: 410px;
+    height: 420px;
     width: 210px; 
 }
 
 .list-group {
     gap: 5px;
+    border: none;
     
 }
 
@@ -95,6 +111,8 @@ body {
     border: none;   
     color: black; 
     width: 180px;
+    text-shadow: 5px 5px 5px white;
+    font-weight: 900;
 
 }
 
@@ -106,8 +124,8 @@ body {
 .img{
     background-color: rgba(255, 222, 173, 0.142);
     /* background-color: honeydew; */
-    box-shadow: 5px 5px 5px grey;
-    height: 100px;
+    /* box-shadow: 5px 5px 5px grey; */
+    /* height: 100vh; */
     width: 100%;
     justify-items: center;
     border-radius: 10px;
@@ -119,20 +137,16 @@ body {
 .item1 {
     /* margin-bottom: 3px; */
     /* background-color: coral; */
-    box-shadow: 1px 1px 1px grey;
+    /* box-shadow: 1px 1px 1px grey; */
     font-weight: bolder;
     
 }
 
-.item2 {
-    /* background-color:darkgreen; */
-    box-shadow: 1px 1px 1px grey;
-}
 
 
 .item3 {
     font-size: 1rem !important      ;
-    box-shadow: 1px 1px 1px grey;
+    text-shadow: 5px 5px 5px white;
     color: black;
     font-weight: bolder;
 }
@@ -140,7 +154,7 @@ body {
 
 .item4 {
     font-size: 1rem !important      ;
-    box-shadow: 1px 1px 1px grey;
+    /* box-shadow: 1px 1px 1px grey; */
 }
 
 
@@ -155,4 +169,8 @@ body {
 
 .Rain {
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNzCXXWOA3CSJIKUR9DGSjrC6PgxoL7FReXztNM8RQ_CUFJxHS5Q093yABSzXjCufZrsc&usqp=CAU);
+  }
+
+.Snowy {
+    background-image: url(https://gezzio.com/wp-content/uploads/2017/01/mert-gundogdu-kar-istanbul-kopru.jpg);
   }
