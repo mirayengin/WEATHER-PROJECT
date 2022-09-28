@@ -2,6 +2,7 @@ const input = document.querySelector("input");
 const button = document.querySelector("button");
 const wrongDiv = document.querySelector(".wrong");
 let isError = false;
+// let = dataObject;
 
 //* api'den veri çekmek için
 const getWeather = async (cityName) => {
@@ -15,6 +16,8 @@ const getWeather = async (cityName) => {
       // throw new Error(`Something went wrong. Failure Code :${res.status}`);
     }
     const data = await res.json();
+    // dataObject
+    console.log(data);
     
     console.log(data);
     renderWeather(data);
@@ -80,9 +83,9 @@ const aciklama = document.querySelector(".aciklama")
 button.addEventListener("click", () => {
   isError = false
   if(cities.includes(input.value.toLowerCase())){
-    aciklama.innerHTML += `<h2>You know the weather for <span class="danger">${input.value.toUpperCase()}</span></h2>`;
+    aciklama.innerHTML = `<h2>You know the weather for <span class="danger">${input.value.toUpperCase()}</span></h2>`;
     wrongDiv.innerHTML = `<h2></h2>`;
-  }else{
+  } else {
   cities.push(input.value.toLowerCase())
   getWeather(input.value);
     aciklama.innerHTML = `<h2> </h2>`;
@@ -103,13 +106,15 @@ input.addEventListener("keydown", (e) => {
 
 const row = document.querySelector(".row");
 
+
 row.addEventListener("click", (e) => {
   if (e.target.innerText == "Remove") {
-    e.target.parentElement.parentElement.remove();
-    console.log(e.target.parentElement.previousElementSibling.firstElementChild.innerText.toLowerCase());
+    e.target.parentElement.parentElement.parentElement.remove();
+    console.log(e.target.parentElement.parentElement.firstElementChild.innerText.split(" ")[0].toLowerCase().trim());
     console.log(cities);
-    cities = cities.filter((item) => item !== e.target.parentElement.previousElementSibling.firstElementChild.innerText.toLowerCase())
-    console.log(cities);    
+    cities = cities.filter((item) => item !== e.target.parentElement.parentElement.firstElementChild.innerText.split("  ")[0].toLowerCase())
+    console.log(cities); 
+    input.focus()
   }
 })
 
