@@ -1,6 +1,6 @@
 # Weather App
 
-### Check The Live Website ➡️ [Live Website](https://sekunev-weather-app.netlify.app/)
+### Check The Live Website ➡️ [Live Website](https://weather-project-mirayengin.vercel.app//)
 
 ### Description
 
