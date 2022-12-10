@@ -39,7 +39,7 @@ const renderWeather = (item) => {
     console.log(cities);
     
   }
-
+ console.log('add cities :>> ', cities);
   if (cities.length == 4) {
     weatherListDiv.firstElementChild.remove();
     cities.shift();
@@ -110,10 +110,14 @@ const row = document.querySelector(".row");
 row.addEventListener("click", (e) => {
   if (e.target.innerText == "Remove") {
     e.target.parentElement.parentElement.parentElement.remove();
-    console.log(e.target.parentElement.parentElement.firstElementChild.innerText.split(" ")[0].toLowerCase().trim());
+    // console.log(e.target.parentElement.parentElement.firstElementChild.innerText.split(" ")[0].toLowerCase().trim());
+    // console.log(cities);
+    // console.log(e.target.parentElement.parentElement.firstElementChild.innerText.split("  ")[0].toLowerCase());
+    // console.log(e.target.parentElement.parentElement.firstElementChild.innerText.split(" "));
+    let city = e.target.parentElement.parentElement.firstElementChild.innerText.split(" ")[0].toLowerCase();
+    cities = cities.filter((item) => item !== city)
+
     console.log(cities);
-    cities = cities.filter((item) => item !== e.target.parentElement.parentElement.firstElementChild.innerText.split("  ")[0].toLowerCase())
-    console.log(cities); 
     input.focus()
   }
 })

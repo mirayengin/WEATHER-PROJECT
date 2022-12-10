@@ -141,6 +141,7 @@ body {
     /* background-color: coral; */
     /* box-shadow: 1px 1px 1px grey; */
     font-weight: bolder;
+    /* overflow-x: hidden !important; */
     
 }
 
